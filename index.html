@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="FrontPageStyle.css">
+    <title>Moojik</title>
+  </head>
+  <body>
+    <h1>Moojik</h1>
+    <div class="images">
+
+      <img class="left-arrow" src="iconmonstr-angel-right-circle-thin.svg"/>
+      <img class="thumbnail1" src="study_image.jpeg" alt="">
+      <img class="thumbnail2" src="study_image.jpeg" alt="">
+      <img class="thumbnail" src="study_image.jpeg" alt="">
+      <img class="thumbnail3" src="study_image.jpeg" alt="">
+      <img class="thumbnail4" src="study_image.jpeg" alt="">
+      <img class="right-arrow" src="iconmonstr-angel-right-circle-thin.svg"/>
+    </div>
+
+    <div class="songName">
+      <h3 class="">Childhood</h3>
+      <h4 class="artist">Aryan Choudhary</h4>
+    </div>
+
+    <div class="play">
+      <img src="iconmonstr-video-15.svg" alt="">
+    </div>
+
+    <div class="sliderDiv">
+      <input type="range" min="1" max="1000" value="1" class="slider" id="myRange">
+    </div>
+
+
+
+  </body>
+</html>
+
+<script type="text/javascript">
+  document.getElementById("myRange").oninput = function() {
+  var value = (this.value-this.min)/(this.max-this.min)*100
+  this.style.background = 'linear-gradient(to right, #555 0%, #555 ' + value + '%, #9c9c9c ' + value + '%, #9c9c9c 100%)'
+};
+</script>

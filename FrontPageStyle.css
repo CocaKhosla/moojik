@@ -1,0 +1,227 @@
+body {
+  background-color: #edf7f0;
+  background-image: linear-gradient(to right, #fff, #ff0, #fff, #0ff, #ff1);
+  animation: animate 120s linear infinite;
+  background-size: 10000%;
+  margin: 0;
+  height: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.songName{
+  text-align: center;
+}
+.thumbnail {
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+  border-radius: 1vw;
+  right: 0;
+  margin-left: auto;
+  margin-right: -10vw;
+  display: inline-block;
+  z-index: 3;
+  position: relative;
+}
+
+.left-arrow {
+  display: inline-block;
+  left: -3vw;
+  height: 3vw;
+  margin-bottom: 10vw;
+  position: relative;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  bottom: 2vw;
+
+}
+
+.images {
+  width: 90%;
+  margin-left: 5.5%;
+  margin-right: 0vw;
+  display: inline-block;
+}
+
+.right-arrow {
+  display: inline-block;
+  right: -13vw;
+  height: 3vw;
+  margin-bottom: 10vw;
+  position: relative;
+  bottom: 2vw;
+}
+
+.thumbnail1 {
+  width: 20vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 1vw;
+  right: 0;
+  margin-left: auto;
+  margin-right: -10vw;
+  display: inline-block;
+  opacity: 0.85;
+  z-index: 1;
+  position: relative;
+  bottom: 4.5vw;
+}
+
+.right-arrow:hover {
+  height: 3.5vw;
+  transition: ease-in-out 0.3s;
+}
+
+.left-arrow:hover {
+  height: 3.5vw;
+
+  transition: ease-in-out 0.3s;
+  .images {
+    margin-left: -0.5vw;
+  }
+}
+
+.thumbnail1:hover {
+
+  width: 21vw;
+  height: 21vw;
+  transition: ease-in 0.3s;
+}
+
+
+
+.thumbnail3:hover {
+
+  width: 26vw;
+  height: 26vw;
+  transition: ease-in-out 0.5s;
+}
+
+.thumbnail2:hover {
+
+  width: 26vw;
+  height: 26vw;
+  transition: ease-in-out 0.5s;
+}
+
+.thumbnail4:hover {
+
+  width: 21vw;
+  height: 21vw;
+  transition: ease-in-out 0.3s;
+}
+
+.thumbnail2 {
+  width: 25vw;
+  height: 25vw;
+  object-fit: cover;
+  border-radius: 1vw;
+  right: 0;
+  margin-left: auto;
+  margin-right: -10vw;
+  display: inline-block;
+  opacity: 0.98;
+  z-index: 2;
+  position: relative;
+  bottom: 2vw;
+}
+
+
+.thumbnail3 {
+  width: 25vw;
+  height: 25vw;
+  object-fit: cover;
+  border-radius: 1vw;
+  right: 0;
+  margin-left: auto;
+  margin-right: -10vw;
+  display: inline-block;
+  opacity: 0.98;
+  z-index: 2;
+  position: relative;
+  bottom: 2vw;
+
+}
+
+.thumbnail4 {
+  width: 20vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 1vw;
+  right: 0;
+  margin-left: auto;
+  margin-right: -10vw;
+  display: inline-block;
+  opacity: 0.85;
+  z-index: 1;
+  position: relative;
+  bottom: 4.5vw;
+}
+
+.play {
+  text-align: center;
+}
+
+.play img{
+  width: 4vw;
+  fill: #555;
+  margin-bottom: 2vw;
+}
+
+.play img:hover{
+  width: 4.5vw;
+  transition: ease-in-out 0.2s;
+  margin-bottom: 1.5vw;
+}
+
+.sliderDiv {
+  margin-top: 2vw;
+  text-align: center;
+}
+
+
+ .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  color: grey;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 16px;
+  border-radius: 3px;
+  background: #2e2e2e;
+  cursor: pointer;
+  margin-top: -18px; // You need to specify a margin in Chrome, but in Firefox and IE it is automatic
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+#myRange {
+  background: linear-gradient(to right, #555555 0%, #555 0.1%, #9c9c9c 0.1%, #9c9c9c 100%);
+  border: solid 1px #000000;
+  height: 7px;
+  width: 80%;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+/* .slider::-webkit-slider-runnable-track {
+  background: #555555;
+} */
+
+@keyframes animate
+{
+  0%
+  {
+     background-position: 0% 100%;
+  }
+  50%
+  {
+     background-position: 100% 0%;
+  }
+  100%
+  {
+     background-position: 0% 100%;
+  }
+}
