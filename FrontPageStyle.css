@@ -9,10 +9,26 @@ body {
 
 h1 {
   text-align: center;
+  font-family: 'Rampart One', cursive;
+  font-size: 2.3vw;
 }
 
 .songName{
   text-align: center;
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.nameOfSong {
+  font-weight: 400;
+  font-size: 2vw;
+  bottom: 0;
+  margin-bottom: -1vh;
+}
+
+.artist {
+  font-weight: 300;
+  bottom: 0;
+  font-size: 1vw;
 }
 .thumbnail {
   width: 30vw;
@@ -163,18 +179,29 @@ h1 {
 
 .play {
   text-align: center;
+  margin-bottom: -2vh;
+  padding-bottom: 0;
+}
+
+.play-div {
+  text-align: center;
+}
+
+.play {
+  border: 0px;
+  background-color: rgba(255,255,255,0)
 }
 
 .play img{
   width: 4vw;
   fill: #555;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 
 .play img:hover{
   width: 4.5vw;
   transition: ease-in-out 0.2s;
-  margin-bottom: 1.5vw;
+  margin-bottom: 0.5vw;
 }
 
 .sliderDiv {
