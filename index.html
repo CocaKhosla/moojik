@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="FrontPageStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rampart+One&display=swap" rel="stylesheet">
+
     <title>Moojik</title>
   </head>
   <body>
@@ -19,17 +23,25 @@
     </div>
 
     <div class="songName">
-      <h3 class="">Childhood</h3>
+      <h3 class="nameOfSong">Childhood</h3>
       <h4 class="artist">Aryan Choudhary</h4>
     </div>
 
-    <div class="play">
-      <img src="iconmonstr-video-15.svg" alt="">
+    <div class="play-div">
+      <button class="play" onclick="play_song()">
+        <img src="iconmonstr-video-15.svg" alt="">
+      </button>
     </div>
+
 
     <div class="sliderDiv">
       <input type="range" min="1" max="1000" value="1" class="slider" id="myRange">
     </div>
+
+
+    <audio id="song1">
+      <source src="Music1.mp3" type="audio/mpeg">
+    </audio>
 
 
 
@@ -37,8 +49,13 @@
 </html>
 
 <script type="text/javascript">
+  var arrow_press = 0;
   document.getElementById("myRange").oninput = function() {
   var value = (this.value-this.min)/(this.max-this.min)*100
   this.style.background = 'linear-gradient(to right, #555 0%, #555 ' + value + '%, #9c9c9c ' + value + '%, #9c9c9c 100%)'
 };
+
+  function play_song() {
+    document.getElementById('song1').play();
+  }
 </script>
